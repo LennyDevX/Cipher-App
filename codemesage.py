@@ -3,6 +3,25 @@ import random
 import tkinter as tk
 from tkinter import messagebox, filedialog
 
+def show_info():
+    """
+    Muestra un cuadro de diálogo con información sobre cómo usar la aplicación.
+    """
+    info = """
+    Esta es una aplicación de codificación y decodificación de texto.
+
+    Para codificar un mensaje:
+    1. Haz clic en "Buscar" y selecciona un archivo que contenga el mensaje que deseas codificar.
+    2. Haz clic en "Codificar". El mensaje codificado aparecerá en la caja de texto.
+
+    Para decodificar un mensaje:
+    1. Haz clic en "Buscar" y selecciona un archivo que contenga el mensaje que deseas decodificar.
+    2. Haz clic en "Decodificar". El mensaje decodificado aparecerá en la caja de texto.
+
+    Puedes guardar el mensaje codificado en un archivo haciendo clic en "Guardar".
+    """
+    messagebox.showinfo("Información", info)
+
 def decode(message_file):
     """
     Decodifica un mensaje a partir de un archivo.
@@ -135,5 +154,8 @@ encode_button.pack(side=tk.LEFT)
 
 save_button = tk.Button(button_frame, text="Guardar", command=save_file)
 save_button.pack(side=tk.LEFT)
+
+show_info_button = tk.Button(button_frame, text="Información", command=show_info)
+show_info_button.pack(side=tk.LEFT)
 
 root.mainloop()

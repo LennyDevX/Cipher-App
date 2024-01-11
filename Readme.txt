@@ -1,22 +1,24 @@
-Codificador y Descodificador de Texto en Python
-Este proyecto es una aplicación de codificación y decodificación de texto escrita en Python. La aplicación permite a los usuarios codificar mensajes de texto en números y luego decodificar los números de vuelta a texto.
+#Cipher App - the easy way to decrypt and encrypt messages
 
-Descripción
-La aplicación consta de dos partes principales: la codificación y la decodificación.
+Text Encoder and Decoder in Python
+This project is a text encoding and decoding application written in Python. The application allows users to encode text messages into numbers and then decode the numbers back into text.
 
-Codificación
-La codificación se realiza en la función encode. Esta función toma un mensaje de texto como entrada, divide el mensaje en palabras y asocia cada palabra con un número. Luego, desordena las palabras y las une para formar el mensaje codificado. El mensaje codificado consiste en números separados por saltos de línea.
+Description
+The application consists of two main parts: encoding and decoding.
 
-Decodificación
-La decodificación se realiza en la función decode. Esta función toma un archivo que contiene un mensaje codificado como entrada. El archivo debe contener líneas con el formato "número". Los números se traducen a palabras según el diccionario number_to_word y se unen para formar el mensaje decodificado.
+Encoding
+The encoding is done in the encode function. This function takes a text message as input, splits the message into words, and associates each word with a number. Then, it shuffles the words and joins them to form the encoded message. The encoded message consists of numbers separated by line breaks.
 
-Cómo funciona el código
-El código utiliza la biblioteca tkinter de Python para proporcionar una interfaz de usuario gráfica. Los usuarios pueden seleccionar un archivo para codificar o decodificar, y el mensaje codificado o decodificado se muestra en la interfaz de usuario.
+Decoding
+The decoding is done in the decode function. This function takes a file that contains an encoded message as input. The file should contain lines in the format "number". The numbers are translated into words according to the number_to_word dictionary and joined to form the decoded message.
 
-El código también utiliza los diccionarios word_to_number y number_to_word para mapear palabras a números y viceversa. Estos diccionarios deben ser llenados con las palabras y números correspondientes antes de que puedas codificar o decodificar mensajes.
+How the Code Works
+The code uses the Python tkinter library to provide a graphical user interface. Users can select a file to encode or decode, and the encoded or decoded message is displayed in the user interface.
 
-Uso
-Para usar la aplicación, simplemente ejecuta el script de Python en tu terminal. Se abrirá una ventana de la interfaz de usuario. Puedes seleccionar un archivo para codificar o decodificar utilizando el botón "Buscar". Luego, puedes codificar el archivo utilizando el botón "Codificar" o decodificar el archivo utilizando el botón "Decodificar". El mensaje codificado o decodificado se mostrará en la interfaz de usuario. También puedes guardar el mensaje codificado en un archivo utilizando el botón "Guardar".
+The code also uses the word_to_number and number_to_word dictionaries to map words to numbers and vice versa. These dictionaries must be filled with the corresponding words and numbers before you can encode or decode messages.
 
-Conclusión
-Esta aplicación es una herramienta útil para codificar y decodificar mensajes de texto. Es fácil de usar y proporciona una forma rápida y eficiente de codificar y decodificar mensajes.
+Usage
+To use the application, simply run the Python script in your terminal. A user interface window will open. You can select a file to encode or decode using the "Browse" button. Then, you can encode the file using the "Encode" button or decode the file using the "Decode" button. The encoded or decoded message will be displayed in the user interface. You can also save the encoded message to a file using the "Save" button.
+
+Conclusion
+This application is a useful tool for encoding and decoding text messages. It is easy to use and provides a quick and efficient way to encode and decode messages.
